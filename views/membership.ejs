@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  background-color: #4b4a4ace;
+  margin: 0;
+  padding: 0;
+}
+
+.form-container {
+  width: 80%;
+  max-width: 500px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.form-container:hover {
+  transform: scale(1.02);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+input {
+  width: 95%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+input:focus {
+  outline: none;
+  border-color: #65ace4;
+}
+
+input[type="submit"] {
+  background-color: #65ace4;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+input[type="submit"]:hover {
+  background-color: #4c96cf;
+}
+
+  </style>
+    <title>HumbleDot</title>
+  </head>
+<body>
+  <div class="form-container">
+    <h1>Membership Registration Form</h1>
+    <form action="/membership" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="year">Year:</label>
+      <input type="text" id="year" name="year" required>
+
+      <label for="department">Department:</label>
+      <input type="text" id="department" name="department" required>
+
+      <label for="usn">USN:</label>
+      <input type="text" id="usn" name="usn" required>
+
+      <label for="email">Email ID:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="domain">Domain of Interest:</label>
+      <input type="text" id="domain" name="domain" required>
+
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+</body>
+</html>

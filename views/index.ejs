@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>HumbleDot</title>
+    <meta property="og:title" content="Medica template" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}
+      p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}
+      button {  background-color: transparent;}
+      button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}
+      button,select {  text-transform: none;}
+      button,[type="button"],[type="reset"],[type="submit"]
+      button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}
+      button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}
+      a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Poppins;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <style>
+      @keyframes fade-in-left {
+        0% {
+          opacity: 0;
+          transform: translateX(-20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+    </style>
+    <link rel="stylesheet" href="\styles\homestyle.css" />
+  </head>
+  <body>
+    <div>
+      <link href="\styles\homeindex.css" rel="stylesheet" />
+      <script
+        type="text/javascript"
+        src="https://unpkg.com/dangerous-html/dist/default/lib.umd.js"
+      ></script>
+
+      <div class="home-container">
+        <div data-modal="practices" class="home-modal">
+          <div class="home-practices">
+            <div class="home-heading">
+              <span class="home-header">Our practices</span>
+              <svg
+                viewBox="0 0 1024 1024"
+                data-close="practices"
+                class="home-close"
+              >
+                <path
+                  d="M225.835 286.165l225.835 225.835-225.835 225.835c-16.683 16.683-16.683 43.691 0 60.331s43.691 16.683 60.331 0l225.835-225.835 225.835 225.835c16.683 16.683 43.691 16.683 60.331 0s16.683-43.691 0-60.331l-225.835-225.835 225.835-225.835c16.683-16.683 16.683-43.691 0-60.331s-43.691-16.683-60.331 0l-225.835 225.835-225.835-225.835c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331z"
+                ></path>
+              </svg>
+            </div>
+            <div class="home-grid">
+              <div class="home-section">
+                <div class="home-heading01">
+                  <span class="home-header01"></span>
+                  <span class="home-caption">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt.
+                  </span>
+                </div>
+                <div class="read-more">
+                  <span class="home-text"></span>
+                  <img
+                    alt="image"
+                    src="public/Icons/arrow-2.svg"
+                    class="home-image"
+                  />
+                </div>
+              </div>
+              <div class="home-section1">
+                <div class="home-heading02">
+                  <span class="home-header02">Orthopedics</span>
+                  <span class="home-caption1">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt.
+                  </span>
+                </div>
+                <div class="read-more">
+                  <span class="home-text01">Read more</span>
+                  <img
+                    alt="image"
+                    src="public/Icons/arrow-2.svg"
+                    class="home-image01"
+                  />
+                </div>
+              </div>
+              <div class="home-section2">
+                <div class="home-heading03">
+                  <span class="home-header03">Ophtalmology</span>
+                  <span class="home-caption2">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt.
+                  </span>
+                </div>
+                <div class="read-more">
+                  <span class="home-text02">Read more</span>
+                  <img
+                    alt="image"
+                    src="public/Icons/arrow-2.svg"
+                    class="home-image02"
+                  />
+                </div>
+              </div>
+              <div class="home-section3">
+                <div class="home-heading04">
+                  <span class="home-header04">Pediatrics</span>
+                  <span class="home-caption3">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt.
+                  </span>
+                </div>
+                <div class="read-more">
+                  <span class="home-text03">Read more</span>
+                  <img
+                    alt="image"
+                    src="Icons/arrow-2.svg"
+                    class="home-image03"
+                  />
+                </div>
+              </div>
+              <div class="home-section4">
+                <div class="home-heading05">
+                  <span class="home-header05">Nutrition</span>
+                  <span class="home-caption4">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt.
+                  </span>
+                </div>
+                <div class="read-more">
+                  <span class="home-text04">Read more</span>
+                  <img
+                    alt="image"
+                    src="/Icons/arrow-2.svg"
+                    class="home-image04"
+                  />
+                </div>
+              </div>
+              <div class="home-section5">
+                <div class="home-heading06">
+                  <span class="home-header06">General</span>
+                  <span class="home-caption5">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt.
+                  </span>
+                </div>
+                <div class="read-more">
+                  <span class="home-text05">Read more</span>
+                  <img
+                    alt="image"
+                    src="/Icons/arrow-2.svg"
+                    class="home-image05"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section class="home-hero">
+          <nav class="navbar navbar-expand-lg broo" >
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Classic Club</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto"> <!-- Add mr-auto class here -->
+                  <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="\aboutusindex">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" target='blank' href="\membership">Membership</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" target='blank' href="\eventspage">Events </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" target='blank' href="\Contact">Contact Us </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+          <div class="home-main">
+            <div class="home-content">
+              <div class="home-heading07">
+                <h1 class="home-header07">
+                  <span class="home-text12">DISCOVER</span>
+                  <br />
+                  <span>YOURSELF.</span>
+                  <br />
+                </h1>
+                <p class="home-caption6">
+                  'Discover Yourself', is a series of high-intensity workshops powered by the theme of self-introspection
+                </p>
+              </div>
+              <button class="button button-main home-book2">
+                <img
+                  alt="image"
+                  src="/Icons/calendar.svg"
+                  class="home-image09"
+                />
+                <a href="/membership"><span>JOIN US</span></a>
+              </button>
+            </div>
+            <div class="home-image10">
+              <img
+                alt="image"
+                src="\images\image1.JPG"
+                class="home-image11"
+              />
+            </div>
+          </div>
+          <div id="features" class="home-features">
+            <div class="home-content1">
+              <div
+                class="features-section quick-links features-root-class-name"
+              >
+                <div class="features-heading">
+                  <h3 class="features-header">
+                    <a href="/eventspage"><span>EVENTS ORGANIZED</span></a>
+                  </h3>
+                  <img
+                    alt="image"
+                    src="Icons/arrow.svg"
+                    class="features-icon"
+                  />
+                </div>
+                <p class="features-text">
+                  <span>
+                    Making memories one event at a time Bringing your vision to life.
+                  </span>
+                </p>
+                <div class="features-divider"></div>
+              </div>
+            </div>
+          </div>
+          <div class="home-background"></div>
+        </section>
+        <section class="home-practices1">
+          <div class="home-heading08">
+            <h2 class="home-text17">Our practices</h2>
+            <p class="home-text18">
+              'Discover Yourself', is a series of high-intensity workshops powered by the theme of self-introspection
+            </p>
+          </div>
+          <div class="home-content2">
+            <div class="home-grid1">
+                <div class="home-practice-wrapper">
+                  <div class="practice-practice">
+                    <div class="practice-heading">
+                      <h3 class="practice-header">
+                        <span>NEURAL NETWORKS</span>
+                      </h3>
+                      <p class="practice-caption">
+                        <span>
+                          It is a type of machine learning process, called deep learning.
+                        </span>
+                      </p>
+                    </div>
+                    <div class="practice-more read-more"></div>
+                  </div>
+                </div>
+                <div class="home-practice-wrapper1">
+                  <div class="practice-practice">
+                    <div class="practice-heading">
+                      <h3 class="practice-header">
+                        <span>APP DEVOLPMENT</span>
+                      </h3>
+                      <p class="practice-caption">
+                        <span>
+                          Discover the latest app development tools, platform updates, training, and documentation 
+                        </span>
+                      </p>
+                    </div>
+                    <div class="practice-more read-more"></div>
+                  </div>
+                </div>
+                <div class="home-practice-wrapper2">
+                  <div class="practice-practice">
+                    <div class="practice-heading">
+                      <h3 class="practice-header">
+                        <span>WEB DEVOPLOMENT</span>
+                      </h3>
+                      <p class="practice-caption">
+                        <span>
+                          Web development refers to the creating, building, and maintaining of websites. 
+                        </span>
+                      </p>
+                    </div>
+                    <div class="practice-more read-more"></div>
+                  </div>
+                </div>
+                <div class="home-practice-wrapper3">
+                  <div class="practice-practice">
+                    <div class="practice-heading">
+                      <h3 class="practice-header"><span>PAPER WORKS</span></h3>
+                      <p class="practice-caption">
+                        <span>
+                          paperwork - work that involves handling papers: forms or letters or reports etc. 
+                        </span>
+                      </p>
+                    </div>
+                    <div class="practice-more read-more"></div>
+                  </div>
+                </div>
+                <div class="home-practice-wrapper4">
+                  <div class="practice-practice">
+                    <div class="practice-heading">
+                      <h3 class="practice-header"><span>SEMINARS</span></h3>
+                      <p class="practice-caption">
+                        <span>
+                          a conference or other meeting for discussion or training.
+                        </span>
+                      </p>
+                    </div>
+                    <div class="practice-more read-more"></div>
+                  </div>
+                </div>
+                <div class="home-practice-wrapper5">
+                  <div class="practice-practice">
+                    <div class="practice-heading">
+                      <h3 class="practice-header"><span>CONFERENCES</span></h3>
+                      <p class="practice-caption">
+                        <span>
+                          Conferences are professional academic meetings, bridging gaps between industry scholars, experts.
+                        </span>
+                      </p>
+                    </div>
+                    <div class="practice-more read-more"></div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
+        <section class="home-features1">
+          <div class="home-section6">
+            <div class="home-content3">
+              <div class="home-header08">
+                <h2 class="home-heading09">JOIN US TO UNVEIL YOUR TRUE SELF</h2>
+                <p class="home-capton">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt.'Discover Yourself', is a series of high-intensity workshops powered by the theme of self-introspection
+                </p>
+              </div>
+              <div class="home-more6 read-more"></div>
+            </div>
+            <img
+              alt="image"
+              src="blue-background-1500h.png"
+              class="home-image12"
+            />
+          </div>
+          <div class="home-section7">
+            <div class="home-content4">
+              <div class="home-header09">
+                <h2 class="home-heading10">
+                  Find out how we can help you help you.
+                </h2>
+                <p class="home-capton1">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt.
+                </p>
+              </div>
+              <button class="button button-main home-book3">
+                <a href="/eventspage"><span class="home-text19">view events</span></a>
+              </button>
+            </div>
+            <img
+              alt="image"
+              src="https://images.unsplash.com/photo-1569634311433-afb9edb8a3f4?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDU2fHxldmVudHN8ZW58MHx8fHwxNjg5Njg0MjkwfDA&amp;ixlib=rb-4.0.3&amp;w=1500"
+              class="home-image13"
+            />
+          </div>
+        </section>
+        <div class="home-download">
+          <div class="home-main1">
+            <img
+              alt="image"
+              src="\images\Picsart_23-07-19_23-16-14-122.png"
+              class="home-image14"
+            />
+            <div class="home-content5">
+              <h2 class="home-text20">JOIN US TODAY</h2>
+              <div class="home-buttons">
+                <button class="home-i-os button button-main">
+                  <a href="/eventspage"><span>REGISTER FOR EVENTS</span></a>
+                </button>
+                <button class="button button-main home-android">
+                  <a href="/membership"><span>GET MEMBERSHIP</span></a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="home-footer">
+          <div class="home-left1">
+            <div class="home-brand">
+              <img
+                alt="image"
+                src="public\images\logo.png"
+                class="home-image15"
+              />
+              <p class="home-text23">
+                tell us something about your club
+              </p>
+            </div>
+            <div class="home-socials">
+              <div class="social">
+                <img
+                  alt="image"
+                  src="Icons/insider.svg"
+                  class="home-image16"
+                />
+              </div>
+              <div class="social">
+                <img
+                  alt="image"
+                  src="Icons/instagram.svg"
+                  class="home-image17"
+                />
+              </div>
+              <div class="social">
+                <img
+                  alt="image"
+                  src="Icons/twitter.svg"
+                  class="home-image18"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="home-right1">
+            <div class="home-list">
+              <span class="home-header10">Menu</span>
+              <div class="home-links1">
+                <a href="#"><span class="home-link04">Home</span></a>
+                <a href="/aboutusindex"><span class="home-link05">About</span></a>
+                <a href="/eventspage"><span class="home-link06">Events</span></a>
+                <a href="/membership"><span class="home-link08">Membership</span></a>
+              </div>
+            </div>
+            <div class="home-list2">
+              <span class="home-header11">Contact</span>
+              <div class="home-links3">
+                <span class="home-link09">
+                  24 Street Name, City FI 01234, RO
+                </span>
+                <a
+                  href="mailto:contact@template.new?subject=Main"
+                  class="home-link10"
+                >
+                  contact@template.new
+                </a>
+                <a href="tel:(004) 234 - 5678" class="home-link11">
+                  (004) 234 - 5678
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="home-legal">
+            <div class="home-row">
+              <span class="legal-link">Privacy Policy</span>
+              <span class="legal-link">Terms of Use</span>
+            </div>
+            <span class="home-copyright2">
+              © 2022 finbest. All Rights Reserved.
+            </span>
+          </div>
+        </div>
+        <div>
+          <dangerous-html
+            html="<script>
+const modalOpen = document.querySelectorAll('[data-open]');
+const modalClose = document.querySelectorAll('[data-close]');
+
+modalOpen.forEach(button => {
+    button.addEventListener('click', event => {
+        const modal = document.querySelector(`[data-modal='${event.target.dataset.open}']`);
+        modal.style.display = 'flex';
+    });
+});
+
+modalClose.forEach(button => {
+    button.addEventListener('click', event => {
+        const modal = document.querySelector(`[data-modal='${event.target.dataset.close}']`);
+        modal.style.display = 'none';
+    });
+});
+</script>
+"
+          ></dangerous-html>
+        </div>
+        <div>
+          <dangerous-html
+            html="<script>
+const dataLetters = document.querySelectorAll('[data-letter]');
+let activeLetters = [];
+const maxResults = 6;
+
+dataLetters.forEach(letter => {
+  letter.addEventListener('click', function() {
+    if (this.classList.contains('letter-active')) {
+      this.classList.remove('letter-active');
+      activeLetters = activeLetters.filter(a => a !== this.dataset.letter);
+    } else {
+      this.classList.add('letter-active');
+      activeLetters.push(this.dataset.letter);
+    }
+    if (activeLetters.length == 0) {
+      document.querySelector('[data-teleport='results']').style.display = 'none';
+      return;
+    }
+    showResults();
+  });
+});
+
+const showResults = () => {
+  fetch('https://raw.githubusercontent.com/Shivanshu-Gupta/web-scrapers/master/medical_ner/medicinenet-diseases.json')
+    .then(response => response.json())
+    .then(data => {
+      const filteredData = data.filter(item => {
+        const firstLetter = item.disease.charAt(0).toLowerCase();
+        if (activeLetters.includes(firstLetter)) {
+          return true;
+        }
+        return false;
+      });
+
+      document.querySelector('[data-teleport='results']').style.display = 'flex';
+      const resultsContainer = document.querySelector('[data-results='letters']');
+      resultsContainer.innerHTML = '';
+
+      let counter = 0;
+      const diseaseGroups = {};
+      const totalActiveLetters = activeLetters.length;
+
+      filteredData.forEach(disease => {
+        const firstLetter = disease.disease[0].toLowerCase();
+        if (diseaseGroups[firstLetter]) {
+          diseaseGroups[firstLetter].push(disease);
+        } else {
+          diseaseGroups[firstLetter] = [disease];
+        }
+      });
+
+      Object.keys(diseaseGroups).sort().forEach((firstLetter, index) => {
+        const diseasesForThisLetter = diseaseGroups[firstLetter];
+        const diseasesToShow = diseasesForThisLetter.slice(0, Math.ceil(maxResults / totalActiveLetters));
+
+        diseasesToShow.forEach(disease => {
+          const resultContainer = document.createElement('div');
+          resultContainer.classList.add('search-result');
+          resultContainer.classList.add('invisible');
+          resultContainer.style.animationDelay = `${counter * 0.25}s`;
+
+          const resultText = document.createElement('span');
+          resultText.classList.add('result-text');
+          resultText.textContent = disease.disease;
+
+          resultContainer.appendChild(resultText);
+          resultsContainer.appendChild(resultContainer);
+          counter++;
+
+          if (counter === maxResults) {
+            const moreContainer = document.createElement('div');
+            moreContainer.classList.add('search-result');
+            moreContainer.classList.add('more-results');
+
+            const moreText = document.createElement('span');
+            moreText.classList.add('result-text');
+            moreText.textContent = 'More';
+
+            moreContainer.appendChild(moreText);
+            resultsContainer.appendChild(moreContainer);
+            addedMoreContainer = true;
+            return;
+          }
+        });
+      });
+    });
+};
+</script>
+"
+          ></dangerous-html>
+        </div>
+        <div>
+          <dangerous-html
+            html="<script>
+function scroll(direction) {
+  const doctorsDiv = document.querySelector('[data-teleport='doctors']');
+  const scrollAmount = 300;
+  if (direction === 'previous') {
+    doctorsDiv.scrollBy({
+      left: -scrollAmount,
+      behavior: 'smooth'
+    });
+  } else if (direction === 'next') {
+    doctorsDiv.scrollBy({
+      left: scrollAmount,
+      behavior: 'smooth'
+    });
+  }
+}
+
+const buttons = document.querySelectorAll('[data-doctors]');
+buttons.forEach(button => {
+  button.addEventListener('click', () => {
+    const direction = button.dataset.doctors;
+    scroll(direction);
+  });
+});
+</script>"
+          ></dangerous-html>
+        </div>
+      </div>
+    </div>
+    <script
+      data-section-id="navbar"
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

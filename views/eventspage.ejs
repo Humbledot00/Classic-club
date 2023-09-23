@@ -1,0 +1,169 @@
+<html lang="en">
+
+<head>
+  <title>HumbleDot</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles\stylenavbar.css">
+    <link rel="stylesheet" href="styles\externalcss.css">
+
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <a href="#" >HumbleDot</a>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/aboutusindex">About</a></li>
+                    <li><a href="/eventspage">Events</a></li>
+                    <li><a href="/membership">Membership</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+
+    <section class="home">
+        <div class="textcontainer">
+            <h1 class="text event">Event</h1>
+            <h1 class="text website">Website</h1>
+            <a href="/register"><button  class="spotbutton">Book your spot now!!!</button></a>
+        </div>
+    </section>
+   
+  <div class="serverbox">  
+    <h1 align="center" style="margin: 30px; font-size: 60px;">MEET OUR SPEAKERS</h1>
+    <div class="containerdata">
+        <% details.forEach(function(box) { %>
+          <div class="boxdata">
+                <img src="<%= box.image %>" alt="Image">
+                <h3><%= box.title %></h3>
+                <p><%= box.content %></p>
+          </div>
+        <% }) %>
+    </div>
+  </div>
+
+    <div class="try">
+      <img src="\images\imagesss.jpg">
+      <div class="let">
+          <p id="save">SAVE YOUR SPOT</p>
+          <p id="event">The unique event filled with networking,workshops,seminars,and engaing conversations with the idustry leading experts</p>
+          <br><br><a href="/register"><button class="button">BOOK NOW</button></a>
+     </div>
+    </div>
+    <header>
+      <div class="ss">
+              <p>SCHEDULE</p>
+      </div>
+  </header>
+
+  <div class="Schedulecontainer">
+      <div class="schedule-entry">
+          <div class="day">
+              <p class="day-text">MONDAY</p>
+              <p class="date-text">Sep 8</p>
+          </div>
+          <div class="time-venue">
+              <hr>
+              <p class="time-text">2:00pm</p>
+              <p class="venue-text">Zawadi Thandiwe</p>
+          </div>
+      </div>
+
+      <div class="schedule-entry">
+          <div class="day">
+              <p class="day-text">MONDAY</p>
+              <p class="date-text">Sep 8</p>
+          </div>
+          <div class="time-venue">
+              <hr>
+              <p class="time-text">2:00pm</p>
+              <p class="venue-text">Zawadi Thandiwe</p>
+          </div>
+      </div>
+
+
+      <div class="schedule-entry">
+          <div class="day">
+              <p class="day-text">MONDAY</p>
+              <p class="date-text">Sep 8</p>
+          </div>
+          <div class="time-venue">
+              <hr>
+              <p class="time-text">2:00pm</p>
+              <p class="venue-text">Zawadi Thandiwe</p>
+          </div>
+      </div>
+
+
+      <!-- Repeat this block for other schedule entries -->
+  </div>
+  <div class="projectbox">
+      <h1 align="center" style="margin: 40px; font-size: 36px;">PROJECTS</h1>
+    <div class="image-row">
+      <div class="image-container">
+        <img src="https://tse3.mm.bing.net/th?id=OIP.htzCblSutNoQAaK5oyg5uwHaEK&pid=Api&P=0&h=180" alt="Software Development">
+        <h3>Software Development</h3>
+        <p class="P">Give a detailed description of the service being provided here.</p>
+      </div>
+      <div class="image-container">
+        <img src="https://tse2.mm.bing.net/th?id=OIP.dT16VSblmc2bvSC5EsS6SAHaEK&pid=Api&P=0&h=180" alt="Network Security">
+        <h3>Network Security</h3>
+        <p class="P">Give a detailed description of the service being provided here.</p>
+      </div>
+      <div class="image-container">
+        <img src="https://tse3.mm.bing.net/th?id=OIP.Lf0nyQTkXU4_MWJthVHpvwAAAA&pid=Api&P=0&h=180" alt="Cloud Hosting">
+        <h3>Cloud Hosting</h3>
+        <p class="P">Give a detailed description of the service being provided here.</p>
+      </div>
+    </div>
+  </div>  
+
+  <h1 align="center" style="font-size: 36px; margin-top: 40px;">MORE FROM US</h1>
+  <div class="box-container">
+    <div class="boxcontent">
+      <h2 class="box-heading">Only the highest quality</h2>
+      <p class="box-paragraph">Give a detailed description of the service being provided here.</p>
+    </div>
+    
+    <div class="boxcontent">
+      <h2 class="box-heading">Easy on the budget</h2>
+      <p class="box-paragraph">Give a detailed description of the service being provided here.</p>
+    </div>
+    
+    <div class="boxcontent">
+      <h2 class="box-heading">Does the job</h2>
+      <p class="box-paragraph">Give a detailed description of the service being provided here.</p>
+    </div>
+  </div>
+
+  
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+
+    <script>
+        $(window).scroll(function() {
+            if ($(document).scrollTop() > 150) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+    </script>
+   
+    <script src="app.js"></script>
+</body>
+
+</html>

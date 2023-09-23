@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>HumbleDot</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style background-color="blue">
+    .menu {
+      list-style-type: none;
+      padding: 0;
+      background-color: rgb(7, 76,252, 0.849);
+      margin-left: 900px;
+    }
+    .menu li {
+      float: left;
+      margin-top: 30px;    
+    }
+    .menu li a {
+      display: inline-block;
+      color: hsl(0, 25%, 98%);
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    
+    }
+    body{
+      background-color:rgb(7, 76,252, 0.849);
+    }
+    .first-line {
+      font-size: 34px;
+      position: absolute;
+      top: 27%;
+      left: 20%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: #fdfdfd;
+      font-size:  50px;
+      font-family: Verdana;
+    }
+    .second-line {
+      font-size: 18px;
+      position: absolute;
+      top: 38%;
+      left: 21.9%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: #f7f5f5;
+      font-size:  20px;
+      font-family: Verdana;
+    }
+    .third-line {
+      font-size: 18px;
+      position: absolute;
+      top: 61.9%;
+      left: 18%;
+      transform: translate(-50%, -40%);
+      text-align: center;
+      color: white; 
+      font-family: Verdana;
+    }
+    .fourth-line {
+      font-size: 18px;
+      position: absolute;
+      top: 65.9%;
+      left: 20.6%;
+      transform: translate(-50%, -40%);
+      text-align: center;
+      color: white; 
+      font-family: Verdana;
+    }
+    .name {   
+      position: absolute;
+      top: 249px;
+      left: 630px;
+      display: flex;
+      flex-direction: column;
+      align-items: first baseline;
+      padding: 20px;
+      color: white;
+      letter-spacing: 1px;
+      font-size: medium;
+      font-family: Arial;
+    }
+    .email {
+      position: absolute;
+      top: 249px;
+      left: 980px;
+      display: flex;
+      flex-direction: column;
+      align-items: first baseline;
+      padding: 20px;
+      color: white;
+      letter-spacing: 1px;
+      font-size: medium;
+      font-family: Arial;
+    }
+    .msg {
+      position: absolute;
+      top: 360px;
+      left: 630px;
+      display: flex;
+      flex-direction: column;
+      align-items: first baseline;
+      padding: 20px;
+      color: white;
+      letter-spacing: 1px;
+      font-size: medium;
+      font-family:Arial;
+    }
+    .line4{
+      width: 300px;
+      background-color: transparent;
+      border: none;
+      outline: none;
+      border-bottom: 1.5px solid white;
+      color: whitesmoke;
+      font-size: 19px;
+      padding: 1px;
+    }
+    .line5{
+      width: 300px;
+      background-color: transparent;
+      border: none;
+      outline: none;
+      border-bottom: 1.5px solid white;
+      color: whitesmoke;
+      font-size: 19px;
+      margin-bottom: 20px;
+    }
+    .line6{
+      width: 650px;
+      background-color: transparent;
+      border: none;
+      outline: none;
+      border-bottom: 1.5px solid white;
+      color: whitesmoke;
+      font-size: 19px;
+      padding: 1px;
+    }
+     .box {
+      width: 1300px;
+      height: 600px;
+      border-radius: 20px;
+      background-color:rgb(7, 76, 252, 0.849);
+      box-shadow: 5px 5px 10px 10px rgba(72, 155, 233, 0.459);
+      margin: 0 auto;
+    }
+  .send-button {
+      background-color: white;
+      color: blue;
+      border: none;
+      padding: 10px 55px;
+      font-size: 16px;
+      position: absolute;
+      top: 515px;
+      left: 650px;
+      font-family: Verdana;
+      cursor: pointer;
+    }
+    .send-button i {
+      margin-right: -70px;
+    }
+    input{
+      height: 45px;
+    }
+    @media  screen and (max-width:400px){
+    .box {
+      width: 340px;
+      height: 850px;
+      }
+    .menu {
+      margin-left:100px;
+      font-size: 12px;
+    }
+    .first-line {
+      top: 20%;
+      left: 35%;
+      font-size:  40px;   
+    }
+    .second-line {
+      top: 33%;
+      left: 38%;
+      font-size:  15px;
+    }
+    .third-line {
+      font-size: 15px;
+      top: 125%;
+      left: 29%;
+    }
+    .fourth-line {
+      font-size: 15px;
+      top: 130%;
+      left: 39%;
+    }
+    .name {
+      top: 300px;
+      left: 50px;
+      font-size: 15px;
+      
+    }
+    .email {
+      top: 403px;
+      left: 50px;
+      font-size: 15px;
+    }
+
+    .msg {
+      top: 503px;
+      left: 50px;
+      font-size: 15px;
+    }
+    .line4{
+      width: 225px;
+    }
+    .line5{
+      width: 225px;
+    }
+    .line6{
+      width: 270px;
+    } 
+    .send-button {
+      padding: 10px 47px;
+      font-size: 14px;
+      top: 660px;
+      left: 70px;
+    }
+    }
+    
+@media  (min-width:400px)  and ( max-width:768px){
+  .box {
+    width: 680px;
+    height: 1100px;
+    }
+  .menu {
+    margin-left:350px;
+    font-size: 20px;
+  }
+  .first-line {
+    top: 20%;
+    left: 21%;
+    font-size:  45px;   
+  }
+  .second-line {
+    top: 30%;
+    left: 28%;
+    font-size:  22px;
+  }
+  .third-line {
+    font-size: 20px;
+    top: 125%;
+    left: 19%;
+  }
+  .fourth-line {
+    font-size: 20px;
+    top: 130%;
+    left: 25%;
+  }
+  .name {
+    top: 337px;
+    left: 110px;
+    font-size: 22px;
+    
+  }
+  .email {
+    top: 470px;
+    left: 110px;
+    font-size: 22px;
+  }
+
+  .msg {
+    top: 590px;
+    left: 110px;
+    font-size: 22px;
+  }
+  .line4{
+    width:365px;
+  }
+  .line5{
+    width: 365px;
+  }
+  .line6{
+    width: 550px;
+  } 
+  .send-button {
+    padding: 15px 60px;
+    font-size: 16px;
+    top: 770px;
+    left: 125px;
+  }
+  }
+   </style>
+</head>
+<body>
+    <div class="box">
+      <ul class="menu">
+        <li><b><a href="/aboutusindex">ABOUT</a></b></li>
+        <li><b><a href="\webteam.html">WEB TEAM</a></b></li>  
+        <li><b><a href="/" style="color: #6becf8;">HOME</a></b></li>  
+      </ul>
+  <div>
+    <p class="first-line">Let's talk</p>
+    <p class="second-line">Ask us anything or say hi...</p>
+  </div>
+    <div class="third-line">
+      <a class="tline">&#9742; 1 234 567 890</a>
+    </div>
+    <div class="fourth-line">
+      <a class="fline">&#9993; example@example.com</a>
+    </div>
+    <form method="post" action="/feedback">
+      <div class="name"> 
+        <span>NAME</span>
+        <input name="name" type="text" class="line4" placeholder="Victoria Doe" id="name" required>
+      </div>
+      <div class="email">
+        <span>EMAIL</span> 
+        <input name="email" id="email" type="text"  class="line5" placeholder="example@yourdomain.com" required>
+      </div>
+      <div class="msg">
+        <span>MESSAGE</span>
+        <input  name="message" id="message" type="text" class="line6" placeholder="Hi there..." required>
+      </div>
+      <div>
+        <button type="submit" class="send-button">
+          <i class="fas fa-paper-plane"> </i> SEND
+        </button>
+      </div>
+    </form>
+</div>
+</body>
+</html>

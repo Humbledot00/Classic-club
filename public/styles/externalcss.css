@@ -1,0 +1,430 @@
+.textcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    justify-content: center;
+    height: 120vh;
+    width: 100%;
+    background-color: rgba(137, 43, 226, 0.5);
+  }
+  
+  .text {
+    text-align: center;
+    color: #fff;
+  }
+  
+  .event {
+    font-size: 18vw;
+    margin-top: calc(5% + .3em);
+    margin-bottom: .01em; /* Adjust the margin as needed */
+  }
+  
+  .website {
+    font-size: 18vw;
+    margin-left: auto;
+    margin-top: -50px
+
+  }
+
+  .spotbutton{
+    width: 15em;
+    height: 3.5em;
+    border-radius: 2em;
+    margin-left: 42em;
+    margin-top: -12em;
+    font-size: 1vw;
+    color: #ffffff;
+    font-weight: 600;
+    border: #ffffff solid;
+    background-color: transparent;
+    transition: transform 0.3s ease;
+    transition: box-shadow 0.1s ease;
+
+  }
+
+  .spotbutton:hover{
+    transform: scale(1.2);
+    background-color: rgba(128, 218, 245, 0.192);
+    box-shadow: 0 0 10px 3px rgba(176, 241, 114, 0.849);
+  }
+  
+
+  @media (max-width: 450px)  {
+    .textcontainer{
+        height: 30em;
+
+    }
+
+
+  .event {
+    top: auto;
+    margin-top: calc(5% + 1em);
+    margin-bottom: .01em; /* Adjust the margin as needed */
+  }
+  
+  .website {
+    margin-left: auto;
+    top: auto;
+    margin-top: -19px; /* Adjust the margin as needed */
+  }
+
+  .spotbutton{
+    margin-left: calc(5% + 35em);
+    width: 25em;
+    height: 4em;
+    color: #ffffff;
+    border: #ffffff 2px solid ;
+    margin-top: calc(1% + -10em);
+    margin-right: calc(5% + -17.5em);
+  }
+  }
+
+  @media (min-width: 450px) and (max-width: 768px){
+    .textcontainer{
+        height: 60em;
+
+    }
+
+
+    .event {
+        margin-top: calc(5% + .2em);
+      }
+      
+    .website {
+      margin-top: 0px
+  
+    }
+
+    .spotbutton{
+        margin-left: calc(5% + 18em);
+        margin-top: calc(1% + -1em);
+        margin-right: calc(5% + 17.5em);
+      }
+  }
+
+/*-----------------------------------SEVER BOX-----------------------------------------*/
+
+.containerdata {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.boxdata {
+  width: 300px;
+  padding: 20px;
+  background-color: rgba(207, 219, 215, 0.719);
+  border-radius: 10px;
+  margin: 60px;
+}
+
+.serverbox{
+  height: 600px;
+}
+
+.boxdata img {
+  width: 100%;
+  height: auto;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.boxdata h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.boxdata p {
+  font-size: 14px;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .containerdata {
+    flex-wrap: wrap;
+  }
+  
+  .boxdata {
+    width: calc(50% - 20px); /* Adjust the width based on your requirements */
+  }
+}
+
+@media screen and (max-width: 400px){
+  .boxdata {
+  width: 300px;
+  padding: 20px;
+  background-color: rgba(127, 255, 212, 0.719);
+  border-radius: 10px;
+  margin: 40px;
+}
+.serverbox{
+  height: 1100px;
+}
+
+}
+
+/*-------------------------------------SAVE YOUR SPOT-----------------------------*/
+
+.try{
+  background-color: rgb(19, 49, 133);
+  display: flex;
+  justify-content: space-between;
+  padding: 10vw;
+  height: max-content;
+}
+.try img{
+  height:30vw;
+  width: 30vw;
+  float: left;
+  border-radius: 20px 20px;
+ /* padding-left: 7vw;*/
+  padding-right: 7vw;
+  top:10vw;
+}
+#save{
+  color: aliceblue;
+  font-size: 3.5vw;
+  width: 30vw;
+  text-align: center;
+}
+#event{
+  color: aliceblue;
+  font-size: 1.5vw;
+  text-align:center;
+}
+.button{
+  background-color:transparent; 
+  border: 3px solid #cfe6ff;
+  color:  #cfe6ff;
+  border-radius: 8vw;
+  padding: 1vw;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.5vw;
+  cursor: pointer;
+}
+.let{
+  text-align: center;
+  width: 30vw;
+  display: inline-block;
+}
+
+/*---------------------------------PROJECTS ------------------------------------------*/
+
+.image-row {
+  display: flex;
+  justify-content: center;
+  margin-left: 10px;
+  gap: 50px;
+}
+
+.projectbox{
+  height: 600px;
+}
+
+.image-container {
+  text-align: center;
+}
+
+.image-container img {
+  width: 400px;
+  height: 450px;
+  display: flex;
+}
+
+.P {
+  font-size: 18px;
+  margin-top: 10px;
+  letter-spacing: 1px;
+}
+
+.image-container h1 {
+  font-size: 70px;
+  text-align: center;
+  color: rgb(29, 15, 110);
+}
+
+.image-container h3 {
+  font-size: 30px;
+  color: rgb(29, 15, 110);
+  margin-top: 12px;
+}
+
+@media (max-width: 600px) {
+  .image-row {
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .image-container img {
+    width: 100%;
+    height: auto;
+    max-width: 480px;
+    max-height: 500px;
+  }
+
+  .image-container h1 {
+    font-size: 90px;
+  }
+}
+
+@media (max-width: 400px) {
+  .image-row {
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 2.5vw;
+  }
+
+  .image-container img {
+    width: 100%;
+    height: auto;
+    max-width: 350px;
+    max-height: 370px;
+  }
+
+  .projectbox{
+    height: 1100px;
+  }
+
+  .image-container h1 {
+    font-size: 40px;
+  }
+  
+  .P {
+    font-size: 12px;
+    margin-top: -12px;
+  }
+}
+
+/* Optimized styling for screens greater than 768px */
+@media (min-width: 769px) {
+  .image-row {
+    justify-content: space-between;
+  }
+  
+  .image-container {
+    max-width: 500px;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    max-height: 450px;
+  }
+}
+
+/*------------------------------MORE FROM US---------------------------------------*/
+
+.box-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  position: relative;
+}
+
+.boxcontent {
+  flex: 0 0 calc(33.33% - 20px);
+  max-width: calc(33.33% - 20px);
+  height: 200px;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background-image: linear-gradient(rgb(127, 205, 235), rgb(167, 91, 167));
+}
+
+.box-heading {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.box-paragraph {
+  font-size: 14px;
+  text-align: center;
+}
+
+
+@media (max-width: 400px) {
+  .boxcontent {
+    flex: 0 0 100%;
+    max-width: 90%;
+    margin-top: 30px;
+  }
+}
+
+/*----------------------------------------SCHEDULE---------------------------------------*/
+
+.ss {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 50px;
+
+}
+
+.Schedulecontainer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.schedule-entry {
+  width: 300px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 20px;
+}
+
+.day {
+  text-align: center;
+}
+
+.day-text {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.date-text {
+  font-size: 14px;
+  color: #666;
+}
+
+.time-venue {
+  text-align: center;
+}
+
+.time-text {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.venue-text {
+  font-size: 14px;
+  color: #666;
+}
+
+@media screen and (max-width: 768px) {
+  .schedule-entry {
+      width: 45%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Schedulecontainer {
+      flex-direction: row;
+      justify-content: center;
+  }
+
+  .schedule-entry {
+      width: 70%;
+  }
+}
