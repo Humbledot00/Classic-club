@@ -1,0 +1,30 @@
+app.post("/membership", async (req, res) => {
+  try {
+    const client = await MongoClient.connect(url);
+    const db = client.db(dbNamemembership);
+    const collection = db.collection('feedback');
+
+    const { name, year, department,  usn, email, domain } = req.body;
+
+    const data = {
+      Name: name,
+      year: year,
+      department: department,
+      usn: usn,
+      email: email,
+      domain: domain
+
+    };
+
+    // Insert data into the database
+    await collection.insertOne(data);
+
+    client.close();
+
+    // Redirect to the success page
+    res.redirect('registration_success.html');
+  } catch (err) {
+    console.error(err);
+    res.send('Error inserting data into MongoDB');
+  }
+});
